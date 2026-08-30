@@ -1,16 +1,12 @@
+package com.example.libreria_clases
+
 open class Persona constructor(
     val nombre:String,
     val edad:Int) {
 
 
     open fun presentarse():String{
-        return "Hola mi nombre es $nombre y tengo $edad"
-    }
-
-    open fun main(){
-        val jose = Persona("Jose",  20)
-        println(jose.presentarse())
-
+        return "Hola mi nombre es $nombre y tengo $edad años"
     }
 
 }
@@ -28,12 +24,7 @@ class Empleado(nombre:String,
         return "Hola, sou $nombre y mi puesto es $puesto"
     }
 
-    override fun main() {
-        val eduardo = Empleado("Eduardo",  30, "soporte", 900000)
-        println(eduardo.mostrarPuesto())
-        println(eduardo.presentarse())
 
-    }
 }
 fun main() {
     val jose = Persona("Jose",  20)
