@@ -1,0 +1,34 @@
+open class Persona constructor(
+    val nombre:String,
+    val edad:Int) {
+
+
+    open fun presentarse():String{
+        return "Hola mi nombre es $nombre y tengo $edad"
+    }
+
+    open fun main(){
+        val Jose = Persona("Jose",  20)
+        println(Jose.presentarse())
+
+    }
+}
+class Empleado(nombre:String,
+               edad:Int,
+               val puesto: String,
+               private val salario:Int):
+    Persona(nombre, edad) {
+
+    open fun mostrarPuesto(): String {
+        return "$nombre trabaja como: $puesto"
+    }
+
+    override fun presentarse(): String {
+        return "Hola, sou $nombre y mi puesto es $puesto"
+    }
+
+    override fun main() {
+        val Eduardo = Empleado("Eduardo",  30, "soporte", 900000)
+        println(Eduardo.presentarse())
+    }
+}
