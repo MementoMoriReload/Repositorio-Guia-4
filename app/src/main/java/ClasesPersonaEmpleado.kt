@@ -35,3 +35,12 @@ class Empleado(nombre:String,
 
     }
 }
+fun main() {
+    val jose = Persona("Jose",  20)
+    val eduardo = Empleado("Eduardo",  30, "soporte", 900000)
+    println(jose.presentarse())
+
+    println(eduardo.mostrarPuesto())
+    println(eduardo.presentarse())
+
+}
