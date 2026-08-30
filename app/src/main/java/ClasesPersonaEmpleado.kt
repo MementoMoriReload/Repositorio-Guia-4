@@ -8,10 +8,11 @@ open class Persona constructor(
     }
 
     open fun main(){
-        val Jose = Persona("Jose",  20)
-        println(Jose.presentarse())
+        val jose = Persona("Jose",  20)
+        println(jose.presentarse())
 
     }
+
 }
 class Empleado(nombre:String,
                edad:Int,
@@ -28,7 +29,9 @@ class Empleado(nombre:String,
     }
 
     override fun main() {
-        val Eduardo = Empleado("Eduardo",  30, "soporte", 900000)
-        println(Eduardo.presentarse())
+        val eduardo = Empleado("Eduardo",  30, "soporte", 900000)
+        println(eduardo.mostrarPuesto())
+        println(eduardo.presentarse())
+
     }
 }
