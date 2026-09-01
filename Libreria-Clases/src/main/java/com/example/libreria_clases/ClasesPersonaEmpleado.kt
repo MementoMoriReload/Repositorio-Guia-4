@@ -21,7 +21,7 @@ class Empleado(nombre:String,
     }
 
     override fun presentarse(): String {
-        return "Hola, sou $nombre y mi puesto es $puesto"
+        return "Hola, soy $nombre y mi puesto es $puesto"
     }
 
 
